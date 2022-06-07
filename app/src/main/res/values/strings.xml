@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="login">Login</string>
+    <string name="input_login">Input your login</string>
+    <string name="password">Password</string>
+    <string name="input_password">Input your password</string>
+    <string name="new_login_button">Create new login</string>
+    <string name="login_button">Login</string>
 </resources>
