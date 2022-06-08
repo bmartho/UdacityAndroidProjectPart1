@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">ShoeStore</string>
     <string name="login">Login</string>
-    <string name="input_login">Input your login</string>
+    <string name="email">E-mail</string>
+    <string name="input_email">Input your e-mail</string>
     <string name="password">Password</string>
     <string name="input_password">Input your password</string>
     <string name="new_login_button">Create new login</string>
@@ -10,7 +11,7 @@
     <string name="start">Get It Started</string>
 
     <string name="welcome_title">Welcome abroad user! Let\'s sell new shoes today?</string>
-    <string name="welcome_body">We are an Android application that will help you to sell your best shoes!\n\nPlease trust us in this moment, and after this screen you will explore a would of new and innovate application. I am sure that you will like it\n\nCan we start?\nPlease, click in \"Next\" button and come with us to find your shoes!</string>
+    <string name="welcome_body">We are an Android application that will help you to sell your best shoes!\n\nPlease trust us and after this screen you will explore a would of new and innovate application. I am sure that you will like it.\n\nCan we start?\nPlease, click in \"Next\" button and come with us to sell shoes!</string>
     <string name="instructions_title">Before we start, I would like to explain how this application works:</string>
     <string name="instructions_body">1- In the first screen, it is possible to see all your shoes for sale.\n\n2- In the button bellow, you can add new shoes in the list.\n\n3- After that your list will be updated with the new shoes.\n\n4- Try to put more details as possible to sell more and more.\n\n5- Have fun and good sales!</string>
     <string name="plus_button">Plus button</string>
@@ -19,6 +20,7 @@
     <string name="welcome">Welcome</string>
     <string name="instructions">Instructions</string>
     <string name="shoe_list_title">Shoe List</string>
+    <string name="shoe_detail_title">Shoe Detail</string>
     <string name="logout">Logout</string>
 
     <string name="shoe_name">Name</string>
@@ -31,4 +33,12 @@
     <string name="input_shoe_description">Shoe Description</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+
+    <string name="shoe_name_item">Name:</string>
+    <string name="shoe_company_item">Company:</string>
+    <string name="shoe_size_item">Size:</string>
+    <string name="shoe_description_item">Description:</string>
+
+    <string name="save_error">Please, fill all the information correctly to save</string>
+    <string name="save_succeed">Shoe saved!</string>
 </resources>

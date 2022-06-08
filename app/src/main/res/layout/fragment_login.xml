@@ -9,22 +9,22 @@
         tools:context=".LoginFragment">
 
         <TextView
-            android:id="@+id/loginTextView"
+            android:id="@+id/emailTextView"
             style="@style/label_style"
-            android:text="@string/login"
+            android:text="@string/email"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/loginEditText"
+            android:id="@+id/emailEditText"
             style="@style/editText_style"
-            android:autofillHints="login"
-            android:hint="@string/input_login"
-            android:inputType="text"
+            android:autofillHints="email"
+            android:hint="@string/input_email"
+            android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/emailTextView" />
 
         <TextView
             android:id="@+id/passwordTextView"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:text="@string/password"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
 
         <EditText
             android:id="@+id/passwordEditText"
