@@ -32,6 +32,8 @@ class ShoeStoreViewModel : ViewModel() {
         ) {
             _saveError.value = true
         } else {
+            newShoe.size = newShoe.size.toDouble().toString()
+
             _shoes.value?.add(newShoe)
             _saveSucceed.value = true
         }
