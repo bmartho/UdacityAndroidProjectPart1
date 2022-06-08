@@ -17,7 +17,7 @@
 
         <EditText
             android:id="@+id/loginEditText"
-            style="@style/editTextLoginScreen"
+            style="@style/editText_style"
             android:autofillHints="login"
             android:hint="@string/input_login"
             android:inputType="text"
@@ -37,7 +37,7 @@
 
         <EditText
             android:id="@+id/passwordEditText"
-            style="@style/editTextLoginScreen"
+            style="@style/editText_style"
             android:autofillHints="password"
             android:hint="@string/input_password"
             android:inputType="textPassword"
@@ -47,7 +47,7 @@
 
         <Button
             android:id="@+id/newLoginButton"
-            style="@style/loginScreenButtons"
+            style="@style/buttons_style"
             android:text="@string/new_login_button"
             app:layout_constraintEnd_toStartOf="@+id/loginButton"
             app:layout_constraintHorizontal_bias="0.5"
@@ -56,7 +56,7 @@
 
         <Button
             android:id="@+id/loginButton"
-            style="@style/loginScreenButtons"
+            style="@style/buttons_style"
             android:text="@string/login_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

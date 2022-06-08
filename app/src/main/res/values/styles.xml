@@ -22,7 +22,7 @@
         <item name="android:fontFamily">@font/roboto</item>
     </style>
 
-    <style name="editTextLoginScreen">
+    <style name="editText_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">14dp</item>
@@ -30,7 +30,7 @@
         <item name="android:minHeight">48dp</item>
     </style>
 
-    <style name="loginScreenButtons">
+    <style name="buttons_style">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">16dp</item>
