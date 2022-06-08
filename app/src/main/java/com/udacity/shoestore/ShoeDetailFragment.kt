@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
-import com.udacity.shoestore.models.Shoe
 
 class ShoeDetailFragment : Fragment() {
     private val shoeStoreViewModel: ShoeStoreViewModel by activityViewModels()
@@ -23,34 +22,23 @@ class ShoeDetailFragment : Fragment() {
             inflater, R.layout.fragment_shoe_detail, container, false
         )
 
+        binding.shoesStoreViewModel = shoeStoreViewModel
         binding.cancelButton.setOnClickListener {
             findNavController().navigateUp()
         }
 
-        binding.saveButton.setOnClickListener {
-            val shoeName = binding.ShoeNameEditText.text.toString()
-            val shoeCompany = binding.ShoeCompanyEditText.text.toString()
-            val shoeSize = binding.ShoeSizeEditText.text.toString()
-            val shoeDescription = binding.ShoeDescriptionEditText.text.toString()
-
-            if (shoeName.isBlank() ||
-                shoeCompany.isBlank() ||
-                shoeSize.toDoubleOrNull() == null ||
-                shoeDescription.isBlank()
-            ) {
-                Toast.makeText(context, getString(R.string.save_error), Toast.LENGTH_SHORT).show()
-            } else {
-                shoeStoreViewModel.addShoe(
-                    Shoe(
-                        name = shoeName,
-                        size = shoeSize.toDouble(),
-                        company = shoeCompany,
-                        description = shoeDescription
-                    )
-                )
-
+        shoeStoreViewModel.saveSucceed.observe(viewLifecycleOwner) { isSaved ->
+            if (isSaved) {
                 Toast.makeText(context, getString(R.string.save_succeed), Toast.LENGTH_SHORT).show()
+                shoeStoreViewModel.clearStatus()
                 findNavController().navigateUp()
+            }
+        }
+
+        shoeStoreViewModel.saveError.observe(viewLifecycleOwner) { isError ->
+            if (isError) {
+                Toast.makeText(context, getString(R.string.save_error), Toast.LENGTH_SHORT).show()
+                shoeStoreViewModel.clearStatus()
             }
         }
 

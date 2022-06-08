@@ -22,6 +22,7 @@ class ShoeListFragment : Fragment() {
         )
         setHasOptionsMenu(true)
         binding.fab.setOnClickListener {
+            shoeStoreViewModel.initializeNewShoe()
             findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
         }
 
