@@ -10,6 +10,8 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--Using ConstraintLayout because it's a more complex layout and to avoid
+    linearlayouts inside linearlayouts (nested layouts) causing loss of performance-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -28,6 +30,7 @@
             style="@style/ShoeListItem"
             android:layout_marginTop="16dp"
             android:text="@{shoe.name}"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/nameTitle"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="nameContent" />
@@ -44,6 +47,7 @@
             android:id="@+id/companyContent"
             style="@style/ShoeListItem"
             android:text="@{shoe.company}"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/companyTitle"
             app:layout_constraintTop_toBottomOf="@+id/nameContent"
             tools:text="companyContent" />
@@ -60,6 +64,7 @@
             android:id="@+id/sizeContent"
             style="@style/ShoeListItem"
             android:text="@{String.valueOf(shoe.size)}"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/sizeTitle"
             app:layout_constraintTop_toBottomOf="@+id/companyContent"
             tools:text="sizeContent" />
@@ -76,6 +81,7 @@
             android:id="@+id/descriptionContent"
             style="@style/ShoeListItem"
             android:text="@{shoe.description}"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/descriptionTitle"
             app:layout_constraintTop_toBottomOf="@+id/sizeContent"
             tools:text="descriptionContent" />

@@ -34,10 +34,10 @@
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
 
-    <string name="shoe_name_item">Name:</string>
-    <string name="shoe_company_item">Company:</string>
-    <string name="shoe_size_item">Size:</string>
-    <string name="shoe_description_item">Description:</string>
+    <string name="shoe_name_item"><u>Name:</u></string>
+    <string name="shoe_company_item"><u>Company:</u></string>
+    <string name="shoe_size_item"><u>Size:</u></string>
+    <string name="shoe_description_item"><u>Description:</u></string>
 
     <string name="save_error">Please, fill all the information correctly to save</string>
     <string name="save_succeed">Shoe saved!</string>

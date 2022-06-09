@@ -11,7 +11,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <!--Using LinearLayout as it's a simple viewgroup and easy to include new items-->
             <LinearLayout
+                android:id="@+id/shoe_list_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -31,12 +33,6 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="16dp"
                     android:background="@android:color/darker_gray" />
-
-                <LinearLayout
-                    android:id="@+id/shoe_list_container"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical" />
             </LinearLayout>
         </ScrollView>
 
